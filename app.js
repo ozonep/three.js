@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res) {
-    res.sendFile();
+    res.sendFile('./public/index.html');
 });
 
 app.listen(8080);
